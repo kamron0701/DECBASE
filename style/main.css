@@ -30,12 +30,130 @@
     text-decoration: none;
 }
 
+.container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body {
+    overflow-x: hidden;
+    height: 1000px;
+}
+
+button {
+    border: none;
+}
+
 /* Header start */
 /* Header end */
 
 /* Main start */
 
 /* Banner start */
+
+.banner {
+    margin-top: 75px;
+}
+
+.banner-content {
+    column-gap: 44px;
+}
+
+.banner-info {
+    transform: translateX(-150%);
+    opacity: 0;
+}
+
+.banner-info_subtitle {
+    color: var(--textColor);
+    font-family: var(--Open-SemiBold);
+    font-size: 20px;
+}
+
+.banner-info_title {
+    color: var(--titleColor);
+    font-family: var(--Poppins-SemiBold);
+    font-size: 72px;
+    line-height: 78px;
+    margin-block: 12px 23px;
+}
+
+.banner-info_text {
+    color: var(--textColor);
+    font-family: var(--Open-Reg);
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.banner-info_btn {
+    margin-top: 46px;
+    color: var(--light);
+    font-family: var(--Poppins-SemiBold);
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 700;
+    padding: 16px 30px;
+    background-color: var(--secondary);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid var(--light);
+    transition: 0.4s;
+}
+
+.banner-info_btn:hover {
+    color: var(--secondary);
+    background-color: var(--light);
+    cursor: pointer;
+    border: 2px solid var(--secondary);
+}
+
+.banner-img {
+    max-width: 716px;
+    width: 100%;
+    height: 626px;
+    border-top-left-radius: 140px;
+    border-bottom-right-radius: 140px;
+    position: relative;
+    transform: translateX(150%);
+    opacity: 0;
+}
+
+.banner-content_item {
+    transition: 1s;
+}
+.banner-img::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--primary);
+    position: absolute;
+    top: 33px;
+    left: 33px;
+    border-top-left-radius: 140px;
+    border-bottom-right-radius: 140px;
+    z-index: 1;
+}
+
+.banner-img_box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-top-left-radius: 140px;
+    border-bottom-right-radius: 140px;
+    background-image: url(../image/hero-img.png);
+    position: relative;
+    z-index: 2;
+}
 
 /* Banner end */
 /* Main end */
