@@ -1,0 +1,41 @@
+/* Imports */
+
+@import url(./font.css);
+
+/* Variables */
+
+:root {
+    --primary: #caa892;
+    --secondary: #37806b;
+    --light: #ffffff;
+    --gray: #f8f8f8;
+    --titleColor: #212121;
+    --textColor: #646464;
+    --Open-Reg: "OpenSans-Regular";
+    --Open-SemiBold: "OpenSans-SemiBold";
+    --Open-Bold: "OpenSans-Bold";
+    --Open-Med: "OpenSans-Medium";
+    --Poppins-Bold: "Poppins-Bold";
+    --Poppins-SemiBold: "Poppins-SemiBold";
+    --Poppins-Med: "Poppins-Medium";
+}
+
+/* General Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Header start */
+/* Header end */
+
+/* Main start */
+
+/* Banner start */
+
+/* Banner end */
+/* Main end */
