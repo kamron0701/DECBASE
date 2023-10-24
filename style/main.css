@@ -43,6 +43,13 @@
     justify-content: space-between;
 }
 
+.title {
+    color: var(--titleColor);
+    font-family: var(--Poppins-Med);
+    font-size: 48px;
+    line-height: 57px;
+}
+
 body {
     overflow-x: hidden;
     height: 1000px;
@@ -270,4 +277,25 @@ button {
 }
 
 /* Service end */
+
+/* About start */
+
+.reverse::after {
+    top: -33px;
+    left: -33px;
+}
+
+.about-us-info {
+    max-width: 544px !important;
+    width: 100% !important;
+}
+
+.about-us_text {
+    width: 100%;
+}
+
+.about-us_item {
+    transition: 1s;
+}
+/* About end */
 /* Main end */
