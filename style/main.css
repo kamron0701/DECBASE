@@ -307,7 +307,7 @@ button {
 /* Experience start */
 
 .experience {
-    margin-block: 100px;
+    margin-block: 150px;
 }
 
 .experience-content_item {
@@ -325,4 +325,76 @@ button {
     letter-spacing: 2px;
 }
 /* Experience end */
+
+/* statistics start */
+
+.statistics {
+    background-color: var(--gray);
+    padding: 87px 0 105px;
+}
+
+.statistics-title {
+    margin: 0 auto 87px;
+    max-width: 821px;
+    text-align: center;
+}
+
+.statistics-info {
+    display: flex;
+    justify-content: space-between;
+    height: 278px;
+    /* overflow-x: hidden; */
+}
+
+.info-item {
+    background-color: var(--light);
+    border-radius: 40px 0px;
+    box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.1);
+    width: 185px;
+    height: 182px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+.bottom {
+    align-self: self-end;
+    position: relative;
+    z-index: 2;
+}
+
+.bottom:nth-of-type(4)::after {
+    content: "";
+}
+
+.bottom::before {
+    content: url(../image/line.svg);
+    position: absolute;
+    top: 0%;
+    left: -118%;
+    z-index: 1;
+}
+.bottom::after {
+    content: url(../image/line-reverse.svg);
+    position: absolute;
+    top: 0%;
+    right: -118%;
+    z-index: 1;
+}
+
+.info-item_count {
+    color: var(--titleColor);
+    font-family: var(--Open-Bold);
+    font-size: 50px;
+    line-height: 100%;
+}
+
+.info-item_desc {
+    color: var(--textColor);
+    font-family: var(--Open-SemiBold);
+    font-size: 18px;
+}
+/* statistics end */
 /* Main end */
