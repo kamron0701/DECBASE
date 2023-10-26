@@ -157,9 +157,14 @@ button {
     overflow: hidden;
     border-top-left-radius: 140px;
     border-bottom-right-radius: 140px;
-    background-image: url(../image/hero-img.png);
     position: relative;
     z-index: 2;
+}
+
+.banner-img_box img {
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 
 /* Banner end */
@@ -298,4 +303,26 @@ button {
     transition: 1s;
 }
 /* About end */
+
+/* Experience start */
+
+.experience {
+    margin-block: 100px;
+}
+
+.experience-content_item {
+    transition: 1s;
+}
+
+.banner-info_title-img {
+    font-size: 150px;
+    font-family: var(--Poppins-Bold);
+    color: var(--secondary);
+}
+
+.experience-title {
+    line-height: 65px;
+    letter-spacing: 2px;
+}
+/* Experience end */
 /* Main end */

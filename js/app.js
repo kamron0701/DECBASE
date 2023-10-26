@@ -3,14 +3,37 @@ let bannerItems = document.querySelectorAll(".banner-content_item");
 let aboutUsItems = document.querySelectorAll(".about-us_item");
 let about = document.querySelector(".about");
 
-console.log(bannerItems);
+let experience = document.querySelector(".experience");
+let experienceItems = document.querySelectorAll(".experience-content_item");
+
+console.log(experience);
+console.log(experienceItems);
+
 let zero = 0;
+
+// Animations
+
+window.addEventListener("DOMContentLoaded", () => {
+    bannerItems.forEach((el) => {
+        el.style = `transform:translateX(${zero});
+                            opacity:${1};`;
+    });
+});
 
 console.log(aboutUsItems);
 
 window.addEventListener("scroll", () => {
     if (scrollY > about.offsetTop - about.clientHeight / 2) {
         aboutUsItems.forEach((item) => {
+            item.style = `transform:translateX(${zero});
+                                  opacity:${1};`;
+        });
+    }
+});
+
+window.addEventListener("scroll", () => {
+    if (scrollY > experience.offsetTop - experience.clientHeight / 2) {
+        experienceItems.forEach((item) => {
             item.style = `transform:translateX(${zero});
                                   opacity:${1};`;
         });
@@ -27,13 +50,4 @@ var swiper = new Swiper(".mySwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-});
-
-// Animations
-
-window.addEventListener("DOMContentLoaded", () => {
-    bannerItems.forEach((el) => {
-        el.style = `transform:translateX(${zero});
-                            opacity:${1};`;
-    });
 });
