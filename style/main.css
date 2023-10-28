@@ -489,4 +489,67 @@ button {
     left: -10%;
 }
 /* testimonials end */
+
+/* blog start */
+
+.blog {
+    background-color: var(--gray);
+    padding-block: 93px 122px;
+}
+
+.blog-content {
+    margin-top: 83px;
+    column-gap: 30px;
+}
+
+.content-items {
+    max-width: 610px;
+    width: 100%;
+}
+
+.content-items-img {
+    max-width: 554px;
+    width: 100%;
+    border-radius: 100px 0px;
+    height: 387px;
+    position: relative;
+}
+
+.content-items-img::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--primary);
+    position: absolute;
+    top: 15px;
+    right: -15px;
+    border-radius: 100px 0px;
+    z-index: 4;
+}
+
+.content-items-img img {
+    border-radius: 100px 0px;
+    position: relative;
+    z-index: 5;
+}
+
+.items-info {
+    margin-top: 50px;
+}
+
+.items-info_title {
+    color: var(--titleColor);
+    font-family: var(--Open-SemiBold);
+    font-size: 30px;
+    line-height: 28px;
+}
+
+.items-info_text {
+    margin-top: 17px;
+    color: var(--textColor);
+    font-family: var(--Open-Reg);
+    font-size: 18px;
+    line-height: 28px;
+}
+/* blog end */
 /* Main end */
