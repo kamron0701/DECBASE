@@ -199,6 +199,25 @@ button {
     transform: translateX(-100px) !important;
 }
 
+.testimonials-button-prev {
+    left: auto !important;
+    transform: rotate(180deg) !important;
+    transform: translateX(-100px) !important;
+}
+
+.testimonials-button-next,
+.testimonials-button-prev {
+    width: 30px;
+    height: 30px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.3);
+    top: -10px;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
     width: 30px;
@@ -214,6 +233,13 @@ button {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
+    color: var(--light) !important;
+    font-size: 12px !important;
+    font-weight: 900 !important;
+}
+
+.testimonials-button-next::after,
+.testimonials-button-next::after {
     color: var(--light) !important;
     font-size: 12px !important;
     font-weight: 900 !important;
@@ -236,7 +262,7 @@ button {
 }
 
 .services-cards {
-    max-width: 425px !important;
+    max-width: 425px;
     width: 100%;
     border-radius: 60px 0px;
     background: var(--light);
@@ -397,4 +423,70 @@ button {
     font-size: 18px;
 }
 /* statistics end */
+
+/* testimonials start */
+
+.testimonials {
+    padding-block: 103px 183px;
+}
+
+.testimonial-container {
+    max-width: 1390px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+    display: block;
+}
+
+.testimonials-info {
+    position: relative;
+}
+
+.testimonial-swiper-nav {
+    position: absolute;
+    width: 40px;
+    right: 0;
+    bottom: 0;
+}
+
+.mySwiper2 {
+    margin-top: 50px;
+    padding: 30px;
+    width: 100%;
+}
+
+.testimonials-card {
+    max-width: 571px;
+    width: 100%;
+    border-radius: 70px 0px;
+    background: var(--light);
+    box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+    padding: 40px 38px 60px 100px;
+    position: relative;
+}
+
+.testimonials-card::after {
+    content: url(../image/blockquote.svg);
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.testimonials-card:nth-of-type(1) {
+    margin-left: 30px;
+}
+
+.testimonials-cards_img {
+    width: 130px;
+    height: 130px;
+    border-radius: 35px 0px;
+    overflow: hidden;
+    position: absolute;
+    left: -10%;
+}
+/* testimonials end */
 /* Main end */

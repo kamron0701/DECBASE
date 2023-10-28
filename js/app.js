@@ -51,3 +51,12 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 2,
+    spaceBetween: 120,
+    autoplay: true,
+    navigation: {
+        nextEl: ".testimonials-button-next",
+        prevEl: ".testimonials-button-prev",
+    },
+});
