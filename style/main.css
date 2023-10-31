@@ -185,12 +185,16 @@ button {
 
 .services-subtitle {
     color: var(--textColor);
-
     font-family: var(--Poppins-SemiBold);
     font-size: 20px;
     line-height: 28px;
     text-transform: uppercase;
     letter-spacing: -0.2px;
+    display: block;
+    transition: 1s;
+    transform: rotateX(0deg);
+    transform: translateY(-50px);
+    opacity: 0;
 }
 
 .swiper-button-prev {
@@ -250,6 +254,9 @@ button {
     font-family: var(--Poppins-Med);
     font-size: 48px;
     line-height: 78px;
+    transform: translateY(50px);
+    transition: 1s;
+    opacity: 0;
 }
 
 .mySwiper {
@@ -488,6 +495,11 @@ button {
     position: absolute;
     left: -10%;
 }
+
+.testimonial-title {
+    opacity: 0;
+    transition: 1.4s;
+}
 /* testimonials end */
 
 /* blog start */
@@ -724,4 +736,5 @@ button {
     color: var(--textColor);
     font-family: var(--Open-Reg);
     font-size: 18px;
+    transform: scale(1);
 }
