@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style/aos.css" />
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
@@ -19,11 +20,11 @@
             <section class="banner">
                 <div class="container">
                     <div class="content banner-content">
-                        <div class="banner-info banner-content_item">
+                        <div class="banner-info banner-content_item" data-aos="fade-down" data-aos-duration="1000">
                             <span class="banner-info_subtitle"
                                 >MODERN INTERIOR</span
                             >
-                            <h1 class="banner-info_title">
+                            <h1 class="banner-info_title animate__animated wow animate__swing">
                                 Create Your Interior Design.
                             </h1>
                             <p class="banner-info_text">
@@ -34,7 +35,7 @@
                             </p>
                             <button class="banner-info_btn btn">Contact</button>
                         </div>
-                        <div class="banner-img banner-content_item">
+                        <div class="banner-img banner-content_item" data-aos="fade-up" data-aos-duration="1000">
                             <div class="banner-img_box">
                                 <img src="./image/hero-img.png" alt="">
                             </div>
@@ -49,7 +50,7 @@
                    <div class="services-info">
                     <div class="service-info_text">
                          <span class="services-subtitle">WHAT WE DO</span>
-                        <h2 class="services-title">Our Service</h2>
+                        <h2 class="services-title" data-aos="zoom-in-left">Our Service</h2>
                     </div>
                     <div class="swiper-nav">
                         <div class="swiper-button-next"></div>
@@ -363,7 +364,7 @@
                             <a href="tel: 002-568423591" class="footer-link content-item_nav-link">002-568423591</a>
                         </nav>
                     </div>
-                    <div class="footer-content_item content-item">
+                    <div class="footer-content_item content-item animate__animated animate__bounce">
                         <h3 class="content-item_title">Follow Us</h3>
                         <nav class=" media-link">
                             <a href="#!" class="media-link_items link-items">
@@ -383,11 +384,12 @@
                 </div>
 
             </div>
-            <div class="footer-privacy">
-                <p>Copyright @ 2020 Brandoxide.all right reserved.</p>
+            <div class="footer-privacy " >
+                <p  >Copyright @ 2020 Brandoxide.all right reserved.</p>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="./js/aos.js"></script>
         <script src="./js/app.js"></script>
     </body>
 </html>

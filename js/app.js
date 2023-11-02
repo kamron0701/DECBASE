@@ -27,50 +27,50 @@ let zero = 0;
 
 // Animations
 
-window.addEventListener("DOMContentLoaded", () => {
-    bannerItems.forEach((el) => {
-        el.style = `transform:translateX(${zero});
-                            opacity:${1};`;
-    });
-});
+// window.addEventListener("DOMContentLoaded", () => {
+//     bannerItems.forEach((el) => {
+//         el.style = `transform:translateX(${zero});
+//                             opacity:${1};`;
+//     });
+// });
 
 console.log(aboutUsItems);
 
-window.addEventListener("scroll", () => {
-    if (scrollY > about.offsetTop - about.clientHeight / 2) {
-        aboutUsItems.forEach((item) => {
-            item.style = `transform:translateX(${zero});
-                                  opacity:${1};`;
-        });
-    }
-});
+// window.addEventListener("scroll", () => {
+//     if (scrollY > about.offsetTop - about.clientHeight / 2) {
+//         aboutUsItems.forEach((item) => {
+//             item.style = `transform:translateX(${zero});
+//                                   opacity:${1};`;
+//         });
+//     }
+// });
 
-window.addEventListener("scroll", () => {
-    if (scrollY > experience.offsetTop - experience.clientHeight / 2) {
-        experienceItems.forEach((item) => {
-            item.style = `transform:translateX(${zero});
-                                  opacity:${1};`;
-        });
-    }
-});
+// window.addEventListener("scroll", () => {
+//     if (scrollY > experience.offsetTop - experience.clientHeight / 2) {
+//         experienceItems.forEach((item) => {
+//             item.style = `transform:translateX(${zero});
+//                                   opacity:${1};`;
+//         });
+//     }
+// });
 
-window.addEventListener("scroll", () => {
-    if (
-        scrollY >
-        servicesSection.offsetTop - servicesSection.clientHeight / 2
-    ) {
-        serviceSubtitle.style.transform = `translateY(0)`;
-        serviceSubtitle.style.opacity = 1;
-        serviceTitle.style.transform = `translateY(0)`;
-        serviceTitle.style.opacity = 1;
-    }
-});
-window.addEventListener("scroll", () => {
-    if (scrollY > testimonials.offsetTop - testimonials.clientHeight / 2) {
-        testTitle.style.transform = `rotateY(720deg)`;
-        testTitle.style.opacity = 1;
-    }
-});
+// window.addEventListener("scroll", () => {
+//     if (
+//         scrollY >
+//         servicesSection.offsetTop - servicesSection.clientHeight / 2
+//     ) {
+//         serviceSubtitle.style.transform = `translateY(0)`;
+//         serviceSubtitle.style.opacity = 1;
+//         serviceTitle.style.transform = `translateY(0)`;
+//         serviceTitle.style.opacity = 1;
+//     }
+// });
+// window.addEventListener("scroll", () => {
+//     if (scrollY > testimonials.offsetTop - testimonials.clientHeight / 2) {
+//         testTitle.style.transform = `rotateY(720deg)`;
+//         testTitle.style.opacity = 1;
+//     }
+// });
 
 // Swiper js code
 
@@ -92,3 +92,5 @@ var swiper = new Swiper(".mySwiper2", {
         prevEl: ".testimonials-button-prev",
     },
 });
+
+AOS.init();

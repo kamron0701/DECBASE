@@ -75,8 +75,8 @@ button {
 }
 
 .banner-info {
-    transform: translateX(-100%);
-    opacity: 0;
+    /* transform: translateX(-100%); */
+    /* opacity: 0; */
 }
 
 .banner-info_subtitle {
@@ -131,8 +131,8 @@ button {
     border-top-left-radius: 140px;
     border-bottom-right-radius: 140px;
     position: relative;
-    transform: translateX(150%);
-    opacity: 0;
+    /* transform: translateX(150%); */
+    /* opacity: 0; */
 }
 
 .banner-content_item {
@@ -193,8 +193,8 @@ button {
     display: block;
     transition: 1s;
     transform: rotateX(0deg);
-    transform: translateY(-50px);
-    opacity: 0;
+    /* transform: translateY(-50px); */
+    /* opacity: 0; */
 }
 
 .swiper-button-prev {
@@ -256,7 +256,7 @@ button {
     line-height: 78px;
     transform: translateY(50px);
     transition: 1s;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 .mySwiper {
@@ -596,7 +596,7 @@ button {
     position: absolute;
     top: 77px;
     left: 50%;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
 }
 
 .signup-text {
