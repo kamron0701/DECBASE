@@ -115,13 +115,28 @@ button {
     letter-spacing: 1px;
     border: 2px solid var(--light);
     transition: 0.4s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
-.banner-info_btn:hover {
-    color: var(--secondary);
-    background-color: var(--light);
-    cursor: pointer;
-    border: 2px solid var(--secondary);
+.banner-info_btn::after {
+    content: "";
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    width: 0;
+    height: 0;
+    background-color: var(--primary);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.4s;
+}
+
+.banner-info_btn:hover::after {
+    width: 700px;
+    height: 700px;
 }
 
 .banner-img {
@@ -131,8 +146,6 @@ button {
     border-top-left-radius: 140px;
     border-bottom-right-radius: 140px;
     position: relative;
-    /* transform: translateX(150%); */
-    /* opacity: 0; */
 }
 
 .banner-content_item {

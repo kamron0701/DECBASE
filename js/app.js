@@ -94,3 +94,17 @@ var swiper = new Swiper(".mySwiper2", {
 });
 
 AOS.init();
+
+const buttons = document.querySelectorAll(".banner-info_btn");
+
+for (let i = 0; i < buttons.length; i++) {
+    const element = buttons[i];
+
+    element.addEventListener("mousemove", (e) => {
+        let x = e.pageX - element.offsetLeft;
+        let y = e.pageY - element.offsetTop;
+
+        element.style.setProperty("--x", `${x}px`);
+        element.style.setProperty("--y", `${y}px`);
+    });
+}
